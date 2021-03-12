@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/anime_row_background"
+    android:id="@+id/container"
+    android:layout_height="150dp">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="#000"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressBackgroundTint="#F31A0C "
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+         >
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/anime_name"
+            android:text="Anime Title"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:fontFamily="cursive"
+            android:id="@+id/categorie"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rating"
+               android:text="0.0"
+               android:layout_marginTop="10dp"
+               android:textColor="#fff"
+               android:textSize="15sp"
+               android:textStyle="bold"
+               android:paddingRight="8dp"
+               android:drawableLeft="@drawable/ic_star"
+               />
+
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Studio"
+            android:fontFamily="cursive"
+            android:layout_marginTop="5dp"
+            android:id="@+id/studio"/>
+    </LinearLayout>
+
+</LinearLayout>
